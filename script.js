@@ -1,3 +1,16 @@
+// navbar settings
+const navBar = document.getElementById("navbar");
+var menuButton = document.getElementById("menu");
+
+menuButton.addEventListener("click", () => {
+  navBar.classList.toggle("show");
+  menuButton.classList.toggle("fa-times");
+});
+window.onscroll = function () {
+  navBar.classList.remove("show");
+  menuButton.classList.remove("fa-times");
+};
+
 // swiper settings
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
@@ -9,7 +22,6 @@ var swiper = new Swiper(".mySwiper", {
   },
   pagination: {
     el: ".swiper-pagination",
-    type: "",
   },
   loop: true,
   navigation: {
@@ -29,41 +41,22 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-var swiper = new Swiper(".shop-items", {
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    renderBullet: function (index, className) {
-      return '<span class="' + className + '">' + (index + 1) + "</span>";
-    },
-  },
-});
+// image changer
+const mainImg = document.querySelector("#mainImg");
+const subImg = document.getElementsByClassName("smallImg");
 
-// navbar
-const menuBtn = document.getElementById("menu-btn");
-const navBar = document.getElementById("navbar");
-
-menuBtn.addEventListener("click", () => {
-  navBar.classList.toggle("show");
-  menuBtn.classList.add("fa-times");
-});
-window.onscroll = function () {
-  navBar.classList.remove("active");
+subImg[0].onclick = function () {
+  mainImg.src = subImg[0].src;
 };
-
-// const navbar = document.querySelector(".navbar");
-// const menuBtn = document.querySelector("#menu-btn");
-
-// let navbarOpen = false;
-
-// menuBtn.addEventListener("click", () => {
-//   navbar.classList.toggle("showNav");
-//   navbarOpen = !navbarOpen;
-// });
-
-// window.onscroll = function () {
-//   if (navbarOpen) {
-//     navbar.classList.remove("showNav");
-//     navbarOpen = false;
-//   }
-// };
+subImg[1].onclick = function () {
+  mainImg.src = subImg[1].src;
+};
+subImg[2].onclick = function () {
+  mainImg.src = subImg[2].src;
+};
+subImg[3].onclick = function () {
+  mainImg.src = subImg[3].src;
+};
+subImg[4].onclick = function () {
+  mainImg.src = subImg[4].src;
+};
