@@ -47,6 +47,12 @@ body {
 section {
   padding: 5rem 6%;
 }
+.fa-times {
+  font-size: 2rem;
+}
+#menu-btn .fa-times {
+  font-size: 2rem;
+}
 .fas,
 img {
   cursor: pointer;
