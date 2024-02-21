@@ -81,7 +81,7 @@
   header {
     height: 10rem;
   }
-  header .navigations .navbar {
+  #navbar {
     width: 60%;
   }
   .home {
