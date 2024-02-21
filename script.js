@@ -29,9 +29,41 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-// navbar
-const navbar = document.querySelector(".navbar");
-const menuBtn = document.querySelector("#menu-btn").onclick() => {
-  menuBtn.classList.toggle("fas fa-times");
-}
+var swiper = new Swiper(".shop-items", {
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
+  },
+});
 
+// navbar
+const menuBtn = document.getElementById("menu-btn");
+const navBar = document.getElementById("navbar");
+
+menuBtn.addEventListener("click", () => {
+  navBar.classList.toggle("show");
+  menuBtn.classList.add("fa-times");
+});
+window.onscroll = function () {
+  navBar.classList.remove("active");
+};
+
+// const navbar = document.querySelector(".navbar");
+// const menuBtn = document.querySelector("#menu-btn");
+
+// let navbarOpen = false;
+
+// menuBtn.addEventListener("click", () => {
+//   navbar.classList.toggle("showNav");
+//   navbarOpen = !navbarOpen;
+// });
+
+// window.onscroll = function () {
+//   if (navbarOpen) {
+//     navbar.classList.remove("showNav");
+//     navbarOpen = false;
+//   }
+// };
