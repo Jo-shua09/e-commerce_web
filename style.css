@@ -774,8 +774,12 @@ section#pagination {
 }
 .product-details .box-container .box .content p {
   font-size: 1.5rem;
+  line-height: 1.8;
   font-weight: 500;
   color: #1a1a1a;
 }
-
 /* product=details section ends */
+
+/* blog section starts */
+
+/* blog section ends */
