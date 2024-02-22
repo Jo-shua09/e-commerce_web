@@ -1,6 +1,6 @@
 // navbar settings
 const navBar = document.getElementById("navbar");
-var menuButton = document.getElementById("menu");
+const menuButton = document.getElementById("menu");
 
 menuButton.addEventListener("click", () => {
   navBar.classList.toggle("show");
@@ -60,3 +60,37 @@ subImg[3].onclick = function () {
 subImg[4].onclick = function () {
   mainImg.src = subImg[4].src;
 };
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+// const backWard = document.getElementById("back");
+// const forWard = document.getElementById("forward");
+// const firstPage = document.getElementById("first-blog");
+// const secondPage = document.getElementById("second-blog");
+
+// forWard.onclick = function () {
+//   firstPage.classList.toggle("remove");
+//   secondPage.classList.toggle("show");
+// };
+// backWard.onclick = function () {
+//   firstPage.classList.remove("remove");
+//   secondPage.classList.remove("show");
+// };
+// forWard.addEventListener("click", () => {
+//   firstPage.classList.toggle("remove");
+//   secondPage.classList.toggle("show");
+// });
+// secondPage.scroll = () => {
+//   secondPage.classList.toggle("show");
+// };
