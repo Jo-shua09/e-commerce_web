@@ -25,6 +25,19 @@
     height: 6rem;
     width: 80%;
   }
+  .video .video-play {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .about .box-container .text {
+    padding-top: 1rem;
+  }
+  .video .video-desc h1 {
+    font-size: 2.5rem;
+  }
+  .contact .box-container .text {
+    padding-top: 4rem;
+  }
 }
 @media (max-width: 768px) {
   .features .contents {
@@ -47,7 +60,7 @@
   #navbar {
     position: absolute;
     background-color: #e3e6f3;
-    width: 40%;
+    width: 45%;
     height: 100vh;
     top: 100%;
     right: 0;
@@ -82,6 +95,12 @@
   section.blog {
     padding: 0 7%;
     padding-top: 15rem;
+  }
+  .contact .box-container .text {
+    padding-top: 0rem;
+  }
+  .form .box-container {
+    padding: 4rem;
   }
 }
 @media (max-width: 450px) {
@@ -140,5 +159,14 @@
   }
   .product-details .box-container .box .content {
     padding-top: 3rem;
+  }
+  .about .box-container .text {
+    padding-top: 1rem;
+  }
+  .video .video-desc h1 {
+    font-size: 2.5rem;
+  }
+  .form .box-container {
+    padding: 2rem;
   }
 }

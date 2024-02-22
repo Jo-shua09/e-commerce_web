@@ -804,7 +804,7 @@ section.blog-banner {
 .blog-banner .banner .content p {
   font-size: 1.7rem;
   color: var(--white);
-  color: #c9cbce;
+  color: #ccc;
 }
 section.blog {
   padding: 0 12%;
@@ -830,7 +830,7 @@ section.blog {
   position: absolute;
   top: -13%;
   z-index: -4;
-  color: #c9cbce;
+  color: #1a1a1a;
 }
 .blog .box-container .box-wrapper .box img {
   width: 100%;
@@ -854,7 +854,7 @@ section.blog {
 .blog .box-container .box-wrapper .box p {
   font-size: 1.5rem;
   line-height: 1.5;
-  color: #c9cbce;
+  color: #1a1a1a;
   padding-bottom: 1.5rem;
 }
 .blog .box-container .box-wrapper .box a {
@@ -903,5 +903,263 @@ section.blog {
 /* about section starts */
 section.about-banner {
   padding: 0;
+  padding-top: 5rem;
+}
+.about-banner .banner {
+  background: url("about-img/banner.png");
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about-banner .banner .content {
+  text-align: center;
+  padding: 8rem 0;
+}
+.about-banner .banner .content h1 {
+  font-size: 5.5rem;
+  color: var(--white);
+  text-transform: none;
+  padding-bottom: 1rem;
+}
+.about-banner .banner .content p {
+  font-size: 1.7rem;
+  color: var(--white);
+  color: #ccc;
+}
+.about .box-container {
+  padding-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.about .box-container .box {
+  flex: 1 1 45rem;
+}
+.about .box-container .image {
+  width: 100%;
+}
+.about .box-container .image img {
+  width: 100%;
+}
+.about .box-container .text {
+  width: 100%;
+  padding-top: 10rem;
+}
+.about .box-container .text h1 {
+  font-size: 4rem;
+  color: #1a1a1a;
+  padding-bottom: 1rem;
+  font-weight: var(--fw);
+}
+.about .box-container .text p {
+  font-size: 1.5rem;
+  color: #1a1a1a;
+  padding-bottom: 1rem;
+}
+marquee {
+  font-size: 1.5rem;
+  font-weight: var(--fw);
+  background-color: #818ea0;
+  color: var(--white);
+  padding: 1rem 0;
+}
+section.video {
+  padding-top: 7rem;
+}
+.video .video-desc {
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+.video .video-desc h1 {
+  font-size: 5rem;
+}
+.video .video-desc h1 a {
+  text-decoration: underline;
+}
+.video .video-desc h1 a:hover {
+  color: #088178;
+  letter-spacing: 0.2rem;
+}
+.video .video-play {
+  width: 70%;
+  margin: 0 auto;
+}
+.video .video-play video {
+  width: 100%;
+  border-radius: 3rem;
+}
+.about-features {
+  padding-bottom: 10rem;
 }
 /* about section ends */
+
+/* contact section starts */
+section.contact-banner {
+  padding: 0;
+  padding-top: 5rem;
+}
+.contact-banner .banner {
+  background: url("about-img/banner.png");
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contact-banner .banner .content {
+  text-align: center;
+  padding: 8rem 0;
+}
+.contact-banner .banner .content h1 {
+  font-size: 5.5rem;
+  color: var(--white);
+  text-transform: none;
+  padding-bottom: 1rem;
+}
+.contact-banner .banner .content p {
+  font-size: 1.7rem;
+  color: var(--white);
+  color: #ccc;
+}
+.contact .box-container {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  gap: 6rem;
+  padding-top: 5rem;
+}
+.contact .box-container .text {
+  flex: 1 1 20rem;
+  width: 100%;
+  padding-top: 7rem;
+}
+.contact .box-container .map {
+  flex: 1 1 45rem;
+  width: 100%;
+  object-fit: cover;
+}
+.contact .box-container .map iframe {
+  width: 100%;
+  height: 45rem;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+.contact .box-container .text h3 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #1a1a1a;
+  padding-bottom: 1.5rem;
+}
+.contact .box-container .text h1 {
+  font-size: 2rem;
+  color: #1a1a1a;
+  padding-bottom: 2rem;
+}
+.contact .box-container .text h4 {
+  font-size: 1.2rem;
+  font-weight: var(--fw);
+  color: #1a1a1a;
+  padding-bottom: 2rem;
+}
+
+.contact .box-container .text .location {
+  display: flex;
+  gap: 2.5rem;
+}
+.contact .box-container .text .location i {
+  font-size: 1.5rem;
+  color: #1a1a1a;
+  font-weight: normal;
+  padding-bottom: 2.5rem;
+}
+.contact .box-container .text .location span {
+  font-size: 1.5rem;
+  color: #1a1a1a;
+  font-weight: normal;
+}
+
+.form .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 6rem;
+  border: 0.1rem solid #ccc;
+  width: 100%;
+  padding: 8rem;
+  border-radius: 0.5rem;
+}
+.form .box-container .form {
+  flex: 1 1 45rem;
+}
+.form .box-container .CEO {
+  flex: 1 1 20rem;
+}
+.form .box-container .form h3 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #1a1a1a;
+  padding-bottom: 1.5rem;
+}
+.form .box-container .form h1 {
+  font-size: 2rem;
+  color: #1a1a1a;
+  padding-bottom: 2rem;
+}
+
+.form .box-container .form form input {
+  display: block;
+  width: 100%;
+  border: 0.1rem solid #ccc;
+  height: 5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  padding-left: 0.5rem;
+}
+.form .box-container .form form input:focus,
+.form .box-container .form form textarea:focus {
+  border: 0.1rem solid #088178;
+}
+.form .box-container .form form textarea {
+  display: block;
+  width: 100%;
+  border: 0.1rem solid #ccc;
+  height: 20rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  padding-top: 0.2rem;
+  padding-left: 0.5rem;
+}
+.form .box-container .form .btn {
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem;
+  color: var(--white);
+  background-color: #088178;
+  border-radius: 0.5rem;
+}
+.form .box-container .form .btn:hover {
+  background-color: #044a46;
+  letter-spacing: 0.1rem;
+}
+.form .box-container .CEO .managers {
+  flex: 1 1 10rem;
+  display: flex;
+  gap: 2rem;
+  padding-bottom: 3rem;
+}
+.form .box-container .CEO .managers .image img {
+  width: 6rem;
+}
+.form .box-container .CEO .managers .text h3 {
+  font-size: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.8rem;
+}
+.form .box-container .CEO .managers .text p {
+  font-weight: normal;
+  line-height: 1.8;
+  font-size: 1.5rem;
+}
+
+/* contact section ends */
