@@ -45,43 +45,121 @@
         <div class="navbar" id="navbar">
           <a href="index.html">home</a>
           <a href="shop.html">shop</a>
-          <a class="active" href="blog.html">blog</a>
+          <a href="blog.html">blog</a>
           <a href="about.html">about</a>
           <a href="contact.html">contact</a>
         </div>
         <div class="icons">
-          <i class="fas fa-shopping-bag" id="cart"></i>
+          <a class="active" href="cart.html">
+            <i class="fas fa-shopping-bag" id="cart"></i>
+          </a>
           <i class="fas fa-outdent" id="menu"></i>
         </div>
       </div>
     </header>
     <!-- header section ends -->
 
-    <!-- blog section starts -->
-    <section class="blog" id="blog">
-      <div class="box-container">
-        <div class="box"></div>
+    <!-- cart section starts -->
+    <section class="about-banner">
+      <div class="banner">
+        <div class="content">
+          <h1>#cart</h1>
+          <p>add your coupom code & SAVE upto 70%!</p>
+        </div>
       </div>
     </section>
-    <!-- blog section ends -->
 
-    <!-- newsletter section starts -->
-    <section class="newsletter" id="newsletter">
-      <div class="content">
-        <div class="news">
-          <h1>sign up for newsletters</h1>
-          <p>
-            get e-mail updates about our latest shop and
-            <span>special offers.</span>
-          </p>
-        </div>
-        <div class="input">
-          <input type="email" placeholder="Your email address" />
-          <input type="submit" value="sign up" class="btn" />
-        </div>
+    <section class="cart" id="cart">
+      <div class="cart-table">
+        <table width="100%">
+          <thead class="table-head">
+            <tr>
+              <td>remove</td>
+              <td>image</td>
+              <td>product</td>
+              <td>price</td>
+              <td>quantity</td>
+              <td>subtotal</td>
+            </tr>
+          </thead>
+          <tbody class="body1">
+            <tr>
+              <td>
+                <a href=""><i class="fas fa-times-circle"></i></a>
+              </td>
+              <td><img src="products-img/p3.jpg" alt="" /></td>
+              <td>cartoon astronnaut t-shirt</td>
+              <td>$139.00</td>
+              <td><input type="number" value="1" id="qty" /></td>
+              <td>$139.99</td>
+            </tr>
+          </tbody>
+
+          <tbody class="body2">
+            <tr>
+              <td>
+                <a href=""><i class="fas fa-times-circle"></i></a>
+              </td>
+              <td><img src="products-img/p3.jpg" alt="" /></td>
+              <td>cartoon astronnaut t-shirt</td>
+              <td>$139.00</td>
+              <td><input type="number" value="1" id="qty" /></td>
+              <td>$139.99</td>
+            </tr>
+          </tbody>
+
+          <tbody class="body3">
+            <tr>
+              <td>
+                <a href=""><i class="fas fa-times-circle"></i></a>
+              </td>
+              <td><img src="products-img/p3.jpg" alt="" /></td>
+              <td>cartoon astronnaut t-shirt</td>
+              <td>$139.00</td>
+              <td><input type="number" value="1" id="qty" /></td>
+              <td>$139.99</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
-    <!-- newsletter section ends -->
+
+    <section class="coupon">
+      <div class="box apply">
+        <h3>apply coupon</h3>
+        <input type="text" placeholder="enter your coupon" />
+        <input type="submit" value="apply" class="btn1" />
+      </div>
+      <div class="box check">
+        <h3>cart totals</h3>
+        <div class="input-calc">
+          <div class="calc-1">
+            <input type="text" placeholder="cart subtotal" />
+            <br />
+            <input type="text" placeholder="shopping" />
+            <br />
+            <input
+              type="text"
+              placeholder="total"
+              style="font-weight: bolder"
+            />
+          </div>
+          <div class="calc-2">
+            <input type="number" placeholder="$555" />
+            <br />
+            <input type="text" placeholder="free" />
+            <br />
+            <input
+              type="number"
+              placeholder="$555"
+              style="font-weight: bolder"
+            />
+          </div>
+        </div>
+        <input type="submit" value="proceed to checkout" class="btn2" />
+      </div>
+    </section>
+    <!-- cart section ends -->
 
     <!-- footer section starts -->
     <section class="footer" id="footer">
