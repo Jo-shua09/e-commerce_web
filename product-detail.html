@@ -11,10 +11,10 @@
       content="website, shop, e-commerce, shopping website, boutique, e-commerce website"
     />
     <meta name="author" content="joshua onyeka" />
-    <title>shopping website</title>
+    <title>Cara store-Product_Details</title>
 
     <!-- favicon icon -->
-    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link rel="shortcut icon" href="extra-img/giphy.webp" type="image/x-icon" />
 
     <!-- swiper cdn link css -->
     <link
@@ -50,7 +50,7 @@
           <a href="contact.html">contact</a>
         </div>
         <div class="icons">
-          <a href="cart.html"> <i class="fas fa-shopping-bag" id="cart"></i></a>
+          <i class="fas fa-shopping-cart" id="cart-icon"></i><span>0</span>
           <i class="fas fa-outdent" id="menu"></i>
         </div>
       </div>
@@ -58,37 +58,61 @@
     <!-- header section ends -->
 
     <!-- product detail section starts -->
-    <section class="product-details" id="product-details">
+    <section class="product-details box-content" id="product-details">
       <div class="box-container">
         <div class="box">
           <div class="pro-images">
-            <img src="products-img/p2.jpg" alt="" id="mainImg" />
-
+            <img
+              src="products-img/p2.jpg"
+              alt=""
+              class="products-img"
+              id="mainImg"
+            />
             <div class="small-img-wrap">
               <div class="small-img">
-                <img src="products-img/p2.jpg" alt="" class="smallImg" />
+                <img
+                  src="products-img/p2.jpg"
+                  alt=""
+                  class="smallImg products-img"
+                />
               </div>
               <div class="small-img">
-                <img src="products-img/p3.jpg" alt="" class="smallImg" />
+                <img
+                  src="products-img/p3.jpg"
+                  alt=""
+                  class="smallImg products-img"
+                />
               </div>
               <div class="small-img">
-                <img src="products-img/p4.jpg" alt="" class="smallImg" />
+                <img
+                  src="products-img/p4.jpg"
+                  alt=""
+                  class="smallImg products-img"
+                />
               </div>
               <div class="small-img">
-                <img src="products-img/p1.jpg" alt="" class="smallImg" />
+                <img
+                  src="products-img/p1.jpg"
+                  alt=""
+                  class="smallImg products-img"
+                />
               </div>
               <div class="small-img">
-                <img src="products-img/p5.jpg" alt="" class="smallImg" />
+                <img
+                  src="products-img/p5.jpg"
+                  alt=""
+                  class="smallImg products-img"
+                />
               </div>
             </div>
           </div>
         </div>
 
-        <div class="box">
+        <div class="box product-box">
           <div class="content">
             <h3>home/t-shirt</h3>
-            <h1>men's fashion t-shirt</h1>
-            <h4>$139.00</h4>
+            <h1 class="product-title">fashion t-shirt</h1>
+            <h4 id="prices">$100.00</h4>
             <select name="size" id="select">
               <option value="select size">select size</option>
               <option value="small">S</option>
@@ -99,7 +123,7 @@
             </select>
             <br />
             <input type="number" name="quantity" value="1" id="qty" />
-            <button type="submit" id="add-to-cart">add to cart</button>
+            <button type="submit" id="addbtn">add to cart</button>
             <h1>product details</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
@@ -122,17 +146,85 @@
     </section>
     <!-- product detail section ends -->
 
+    <!-- cart section starts -->
+    <section class="scrollbar-y cart" id="cart-items">
+      <div class="cart-title">
+        <h2>your cart</h2>
+        <i class="fas fa-times" id="close-cart"></i>
+      </div>
+      <div class="cart-content" id="cartContent">
+        <div class="cart-box">
+          <img src="products-img/p1.jpg" alt="" class="cart-img" />
+          <div class="detail-box">
+            <div class="cart-product-title">fashion t-shirt</div>
+            <div class="cart-price">$100.00</div>
+            <div class="cart-size">
+              <select name="size" id="select">
+                <option value="small">S</option>
+                <option value="medium">M</option>
+                <option value="large">L</option>
+                <option value="extra large">XL</option>
+                <option value="extrra extra">XXL</option>
+              </select>
+            </div>
+            <input type="number" value="1" class="cart-quantity" />
+          </div>
+          <i class="fas fa-trash remove-items"></i>
+        </div>
+      </div>
+
+      <div class="item-summary">
+        <div class="top">
+          <div class="summary">
+            <h2>items summary</h2>
+          </div>
+          <div class="details">
+            <h2 id="itemB">1 item(s)</h2>
+            <h2 class="totalA">$ 200</h2>
+          </div>
+          <div class="coupon">
+            <h2>shipping</h2>
+            <select name="delivery" id="select-del">
+              <option value="dd">door delivery</option>
+              <option value="ps">pickUp station</option>
+              <option value="md">merchant delivery</option>
+            </select>
+            <h2>promo code</h2>
+            <input
+              type="text"
+              placeholder="enter your promo code"
+              id="promoCode"
+            />
+            <button class="promo-btn">apply</button>
+          </div>
+          <div class="total">
+            <h2>total</h2>
+            <h2 class="totalB">$ 200</h2>
+          </div>
+          <div class="checkout">
+            <button class="checkOut">check out</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- cart section ends -->
+
     <!-- shop section starts -->
     <section class="shop" id="shop">
       <div class="shop-items">
         <div class="box-container">
           <div class="box">
             <div class="image">
-              <img src="products-img/p11.jpg" alt="" />
+              <img
+                src="products-img/p11.jpg"
+                alt=""
+                class="products-img"
+                id="pImages"
+              />
             </div>
             <div class="content">
               <h3>addidas</h3>
-              <p>cartoon astronnaut t-shirts</p>
+              <p>fashion t-shirt</p>
               <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -141,7 +233,7 @@
                 <i class="fas fa-star-half-alt"></i>
               </div>
               <div class="price">
-                <h6>$78</h6>
+                <h6>$100</h6>
                 <span><i class="fas fa-shopping-cart"></i></span>
               </div>
             </div>
@@ -149,11 +241,16 @@
 
           <div class="box">
             <div class="image">
-              <img src="products-img/p14.jpg" alt="" />
+              <img
+                src="products-img/p16.jpg"
+                alt=""
+                class="products-img"
+                id="pImages"
+              />
             </div>
             <div class="content">
               <h3>addidas</h3>
-              <p>cartoon astronnaut t-shirts</p>
+              <p>fashion t-shirt</p>
               <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -162,7 +259,7 @@
                 <i class="fas fa-star-half-alt"></i>
               </div>
               <div class="price">
-                <h6>$78</h6>
+                <h6>$100</h6>
                 <span><i class="fas fa-shopping-cart"></i></span>
               </div>
             </div>
@@ -170,11 +267,16 @@
 
           <div class="box">
             <div class="image">
-              <img src="products-img/p13.jpg" alt="" />
+              <img
+                src="products-img/p13.jpg"
+                alt=""
+                class="products-img"
+                id="pImages"
+              />
             </div>
             <div class="content">
               <h3>addidas</h3>
-              <p>cartoon astronnaut t-shirts</p>
+              <p>fashion t-shirt</p>
               <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -183,7 +285,7 @@
                 <i class="fas fa-star-half-alt"></i>
               </div>
               <div class="price">
-                <h6>$78</h6>
+                <h6>$100</h6>
                 <span><i class="fas fa-shopping-cart"></i></span>
               </div>
             </div>
@@ -191,11 +293,16 @@
 
           <div class="box">
             <div class="image">
-              <img src="products-img/p15.jpg" alt="" />
+              <img
+                src="products-img/p15.jpg"
+                alt=""
+                class="products-img"
+                id="pImages"
+              />
             </div>
             <div class="content">
               <h3>addidas</h3>
-              <p>cartoon astronnaut t-shirts</p>
+              <p>fashion t-shirt</p>
               <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -204,7 +311,111 @@
                 <i class="fas fa-star-half-alt"></i>
               </div>
               <div class="price">
-                <h6>$78</h6>
+                <h6>$100</h6>
+                <span><i class="fas fa-shopping-cart"></i></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="image">
+              <img
+                src="products-img/p12.jpg"
+                alt=""
+                class="products-img"
+                id="pImages"
+              />
+            </div>
+            <div class="content">
+              <h3>addidas</h3>
+              <p>fashion t-shirt</p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="price">
+                <h6>$100</h6>
+                <span><i class="fas fa-shopping-cart"></i></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="image">
+              <img
+                src="products-img/p10.jpg"
+                alt=""
+                class="products-img"
+                id="pImages"
+              />
+            </div>
+            <div class="content">
+              <h3>addidas</h3>
+              <p>fashion t-shirt</p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="price">
+                <h6>$100</h6>
+                <span><i class="fas fa-shopping-cart"></i></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="image">
+              <img
+                src="products-img/p9.jpg"
+                alt=""
+                class="products-img"
+                id="pImages"
+              />
+            </div>
+            <div class="content">
+              <h3>addidas</h3>
+              <p>fashion t-shirt</p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="price">
+                <h6>$100</h6>
+                <span><i class="fas fa-shopping-cart"></i></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="image">
+              <img
+                src="products-img/p6.jpg"
+                alt=""
+                class="products-img"
+                id="pImages"
+              />
+            </div>
+            <div class="content">
+              <h3>addidas</h3>
+              <p>fashion t-shirt</p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="price">
+                <h6>$100</h6>
                 <span><i class="fas fa-shopping-cart"></i></span>
               </div>
             </div>
@@ -239,7 +450,7 @@
           <img src="extra-img/logo.png" alt="" />
           <h3>contact</h3>
           <p><span>address:</span> 123 washington DC, st. john san francisco</p>
-          <p><span>phone:</span> +124-456-7890 +098-765-4321</p>
+          <p><span>phone:</span> +122-456-10090 +098-765-4321</p>
           <p><span>hours:</span> 10:00AM - 18:00PM mon - sat</p>
           <div class="follow">
             <h3>follow us</h3>
@@ -285,6 +496,10 @@
       </div>
     </section>
     <!-- footer section ends -->
+
+    <div class="loader-container">
+      <img src="extra-img/giphy.webp" alt="" />
+    </div>
 
     <!-- swiper cdn link javascript -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
