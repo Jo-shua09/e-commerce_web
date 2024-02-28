@@ -240,6 +240,39 @@ subImg[3].onclick = function () {
 subImg[4].onclick = function () {
   mainImg.src = subImg[4].src;
 };
+subImg[5].onclick = function () {
+  mainImg.src = subImg[5].src;
+};
+subImg[6].onclick = function () {
+  mainImg.src = subImg[6].src;
+};
+subImg[7].onclick = function () {
+  mainImg.src = subImg[7].src;
+};
+subImg[8].onclick = function () {
+  mainImg.src = subImg[8].src;
+};
+subImg[9].onclick = function () {
+  mainImg.src = subImg[9].src;
+};
+subImg[10].onclick = function () {
+  mainImg.src = subImg[10].src;
+};
+subImg[11].onclick = function () {
+  mainImg.src = subImg[11].src;
+};
+subImg[12].onclick = function () {
+  mainImg.src = subImg[12].src;
+};
+subImg[13].onclick = function () {
+  mainImg.src = subImg[13].src;
+};
+subImg[14].onclick = function () {
+  mainImg.src = subImg[14].src;
+};
+subImg[15].onclick = function () {
+  mainImg.src = subImg[15].src;
+};
 
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
