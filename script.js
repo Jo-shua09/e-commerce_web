@@ -1,10 +1,11 @@
-function loader() {
-  document.querySelector(".loader-container").classList.add("fade-out");
-}
-function fadeOut() {
-  setInterval(loader, 4000);
-}
-window.onload = fadeOut;
+const fade = document.querySelector(".loader-container");
+fade.addEventListener("load", () => {
+  fade.classList.add("fade-out");
+});
+
+window.onload = function () {
+  fade.classList.add("fade-out");
+};
 
 // navbar settings
 const navBar = document.getElementById("navbar");

@@ -648,7 +648,10 @@ section.footer {
   gap: 2rem;
 }
 .footer .box-container .box {
-  flex: 1 1 25rem;
+  flex: 1 1 20rem;
+}
+.footer .box-container .box:nth-child(1) {
+  flex: 1 1 35rem;
 }
 .footer .box-container .box:nth-child(1) img {
   padding-bottom: 1.5rem;
@@ -1316,7 +1319,6 @@ section.cart {
 .cart-box i:hover {
   transform: scale(1.1);
 }
-
 .icons span {
   position: absolute;
   margin-left: 1.5rem;
